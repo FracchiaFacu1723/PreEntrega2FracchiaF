@@ -18,6 +18,11 @@ header #logo{
 main{
     background-color: whitesmoke
 }
+main #visita
+{
+padding: 10px;
+text-align: center;    
+}
 main  h2
 {
  text-align: center;
@@ -34,7 +39,7 @@ main .visita h3
 }
 footer{
     background-color:rgb(68, 68, 68);
-    height: 15%;
+    
 }
 
 header ul
@@ -66,7 +71,7 @@ header ul li a:hover
     background-image: url(../imagenes/costanera.jpg);
     background-repeat: no-repeat;
     background-position:top;
-    height: 50vh;
+    height: 60vh;
     
     
 }
@@ -90,7 +95,7 @@ header ul li a:hover
     background-image: url(../imagenes/cerrocruz.jpg)  ;
     background-repeat: no-repeat;
     background-position:top;
-    height: 50vh;
+    height: 60vh;
 
 }
 .cerro h3{
@@ -110,7 +115,7 @@ header ul li a:hover
     background-image: url(../imagenes/relojcucu.jpg);
     background-repeat: no-repeat;
     background-position:top;
-    height: 50vh;
+    height: 60vh;
 }
 .cucu h3
 {
@@ -130,7 +135,7 @@ header ul li a:hover
     background-image: url(../imagenes/quinta.jpg);
     background-repeat: no-repeat;
     background-position:center;
-    height: 50vh;
+    height: 60vh;
     
 
 }
@@ -141,7 +146,7 @@ header ul li a:hover
     text-align: center;
 }
 .quinta p
-{
+{   
     font-size: 30px;
     text-align: center;
     color:yellow;
@@ -224,17 +229,9 @@ footer .redes a:hover
         padding: 8px;
     }
 
-    /* Contenedor principal */
-    .container-fluid {
-        padding: 0 10px; /* Ajuste de padding */
-    }
+    
 
     /* Sección "visita" */
-    .visita .col-3 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
 
     .visita h2 {
         font-size: 18px;
@@ -251,12 +248,7 @@ footer .redes a:hover
         line-height: 1.4;
     }
 
-    /* Sección "hacer" */
-    #hacer .col-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+
 
     #hacer h3 {
         font-size: 18px;
@@ -387,7 +379,7 @@ footer .redes a:hover
         /* Footer */
         footer {
             display: flex;
-            flex-direction: column;
+            flex-direction:row;
             align-items: center;
             text-align: center;
             padding: 2px;
