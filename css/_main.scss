@@ -1,0 +1,85 @@
+main{
+    background-color: whitesmoke;
+    padding: 50px;
+}
+main #visita {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    
+  }
+  
+  #hacer {
+   
+    padding: 50px 20px;
+  }
+
+main #hacer {
+    ul {
+        list-style:none;
+        padding-left: 20px; 
+    }
+    
+    li {
+        font-size: 18px;
+        color: #333; 
+        margin: 5px 0; 
+    }
+}
+span{
+    font-weight: bold;
+}
+main #hacer h3
+{
+color: red;
+}
+
+
+@media (max-width: 576px){  
+
+    /* Sección "visita" */
+
+    .visita h2 {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .visita h3 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .visita p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+
+    #hacer h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #hacer ul li {
+        font-size: 14px;
+      width: 100%;
+      padding: 5px;
+    }
+
+    /* Secciones de fondo con imágenes */
+    .paseo, .cerro, .cucu, .quinta {
+        height: auto;
+        background-size: cover; /* Ajusta la imagen de fondo */
+        min-height: 200px; /* Establece una altura mínima */
+    }
+
+    .paseo h3, .cerro h3, .cucu h3, .quinta h3 {
+        font-size: 22px;
+    }
+
+    .paseo p, .cerro p, .cucu p, .quinta p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}

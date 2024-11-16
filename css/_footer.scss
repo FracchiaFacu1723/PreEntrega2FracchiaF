@@ -1,0 +1,43 @@
+footer{
+    background-color:rgb(246, 255, 0);
+    
+}
+footer #logo
+{
+float: left;
+height: 80px;
+width: 150px;
+}
+footer #municipalidad
+{
+    float: right;
+    height: 70px;
+width: 200px;
+}
+
+
+
+@media (max-width: 576px) {
+
+   
+    
+
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer #logo, footer #municipalidad {
+        width: 80px;
+        height: auto;
+        margin: 10px 0;
+    }
+   
+
+    
+}
