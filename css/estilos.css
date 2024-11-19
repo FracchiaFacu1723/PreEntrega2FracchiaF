@@ -9,23 +9,16 @@ header ul {
 }
 
 header ul li {
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 }
 
 header ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  background-color: rgb(255, 234, 0);
   border-radius: 10px;
-  font-size: 30px;
-  padding: 4px;
 }
 
 header ul li a:hover {
   background-color: rosybrown;
-  color: palegoldenrod;
 }
 
 main {
@@ -60,7 +53,7 @@ main #hacer h3 {
   color: red;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   /* Sección "visita" */
   .visita h2 {
     font-size: 18px;
@@ -71,8 +64,10 @@ main #hacer h3 {
     margin-top: 10px;
   }
   .visita p {
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 1rem; /* Texto más pequeño y legible */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+    margin: 10px 15px; /* Añade márgenes para espacio */
   }
   #hacer h3 {
     font-size: 18px;
@@ -94,10 +89,113 @@ main #hacer h3 {
     font-size: 22px;
   }
   .paseo p, .cerro p, .cucu p, .quinta p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.4;
   }
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visita .cerro, .quinta, .cucu, .paseo {
+  animation: fadeInUp 1s ease-in-out;
+  opacity: 0; /* Por defecto no es visible */
+}
+
+.visita .cerro:hover, .cucu:hover, .quinta:hover, .paseo:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  transition: transform 0.3s ease-in-out;
+}
+
+.visita img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  transition: transform 0.3s ease-in-out;
+}
+
+.visita .cerro, .cucu, .quinta, .paseo {
+  opacity: 1;
+}
+
+/* PASEO COSTANERA*/
+main #principal {
+  height: 400px;
+  width: 500px;
+}
+
+.mapa iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 450px;
+  border: relative 0;
+}
+
+main .foto {
+  height: 300px;
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  /* Ajustar las imágenes principales */
+  #principal {
+    width: 200px;
+    height: 100px;
+  }
+  /* Alinear texto e imágenes en main */
+  main .col-6 {
+    flex: 0 0 100%; /* Ocupan el 100% del ancho */
+    text-align: center; /* Centra el texto */
+  }
+  /* Ajustar galería de imágenes */
+  .grid img {
+    width: 100%; /* Imágenes de la galería en tamaño completo */
+    margin: 10px 0; /* Espaciado entre imágenes */
+  }
+  /* Ajustar tamaño y alineación del texto */
+  h3 {
+    font-size: 1.5rem; /* Reduce el tamaño de los títulos */
+    text-align: center; /* Centra todos los títulos */
+    margin-top: 15px;
+  }
+  p {
+    font-size: 1rem; /* Texto más pequeño y legible */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+    margin: 10px 15px; /* Añade márgenes para espacio */
+  }
+  .mapa {
+    height: 100%;
+    width: 100%;
+  }
+}
+br {
+  padding: 2px;
+  margin: 2px;
+}
+
+.reloj-cucu {
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 1.8; /* Espaciado entre líneas */
+  font-size: 1rem;
+  text-align: justify; /* Justificar texto */
+}
+
+.reloj-cucu h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.reloj-cucu p {
+  margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
 footer {
   background-color: rgb(246, 255, 0);
 }
@@ -106,12 +204,6 @@ footer #logo {
   float: left;
   height: 80px;
   width: 150px;
-}
-
-footer #municipalidad {
-  float: right;
-  height: 70px;
-  width: 200px;
 }
 
 @media (max-width: 576px) {
@@ -129,6 +221,10 @@ footer #municipalidad {
     margin: 10px 0;
   }
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }

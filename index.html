@@ -4,18 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Villa Carlos Paz</title>
+    <link rel="icon" href="imagenes/icono.ico">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-      }
-    </style>    
+    <meta name="description" content="Villa Carlos Paz es el lugar en el mundo para disfrutar y pasarla genial con tu familia, con hermosos pasisajes y lugares para visitar.">
+    <meta name="keywords" content="vcp, carlos paz, villa carlos paz, cordoba, vacaciones, vacaciones en familia, sierra">
   </head>
-  <body> <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+  <body> <header><nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
     <div class="container-fluid">
-      <a class="logo navbar-brand" href="#visita"> <img src="imagenes/vcp.jpg" id="logo" alt="villacarlospazoficial"></a>
+      <img src="imagenes/vcp.jpg" id="logo" alt="villacarlospazoficial">
+      <a class="logo navbar-brand" href="#visita"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,44 +35,45 @@
   </nav>
     </header>
     <main class="row"> 
-      <div id="visita" class="visita bg-light py-8">
+      <div id="visita" class="visita  py-8">
         <div class="container">
           <h2 class="text-center text-primary mb-4">¿NO SABES QUÉ VISITAR EN VILLA CARLOS PAZ?</h2>
           <p class="text-center text-muted">¡Tranquilo, nosotros te mostramos los mejores lugares para explorar!</p>
           <div class="row">
             <div class="col-md-6 mb-4">
               <div class="card shadow-sm">
-                <img src="imagenes/costanera.jpg" id="costanera" class="card-img-top" alt="Paseo Costanera">
-                <div class="card-body">
-                  <h5 class="card-title">PASEO COSTANERA</h5>
-                  <p class="card-text">Un hermoso parque natural sobre las márgenes del embalse, con bellísimas vistas del lago y las montañas.</p>
+                
+                <a href="paseocostanera.html"><img src="imagenes/costanera.jpg" id="costanera" class="card-img-top" alt="Paseo Costanera"></a>
+                <div class="paseo bg-dark card-body">
+                  <h5 class="card-title text-danger">PASEO COSTANERA</h5>
+                  <p class="card-text text-white">Un hermoso parque natural sobre las márgenes del embalse, con bellísimas vistas del lago y las montañas.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="card shadow-sm">
-                <img src="imagenes/cerrocruz.jpg" id="cerrocruz" class="card-img-top" alt="Cerro de la Cruz">
-                <div class="card-body">
-                  <h5 class="card-title">CERRO DE LA CRUZ</h5>
-                  <p class="card-text">Para disfrutar de la naturaleza y de hermosas vistas desde el punto más alto de Villa Carlos Paz.</p>
+                <a href="cerrocruz.html"><img src="imagenes/cerrocruz.jpg" id="cerrocruz" class="card-img-top" alt="Cerro de la Cruz"></a>
+                <div class="cerro bg-dark card-body">
+                  <h5 class="card-title text-danger" >CERRO DE LA CRUZ</h5>
+                  <p class="card-text text-white">Para disfrutar de la naturaleza y de hermosas vistas desde el punto más alto de Villa Carlos Paz.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="card shadow-sm">
-                <img src="imagenes/relojcucu.jpg" id="relojcucu" class="card-img-top" alt="Reloj Cucú">
-                <div class="card-body">
-                  <h5 class="card-title">RELOJ CUCÚ</h5>
-                  <p class="card-text">Uno de los símbolos emblemáticos de la ciudad, construido en 1958 y visitado diariamente por cientos de turistas.</p>
+                <a href="relojcucu.html"><img src="imagenes/relojcucu.jpg" id="relojcucu" class="card-img-top" alt="Reloj Cucú"></a>
+                <div class="cucu bg-dark card-body">
+                  <h5 class="card-title text-danger">RELOJ CU CÚ</h5>
+                  <p class="card-text text-white">Uno de los símbolos emblemáticos de la ciudad, construido en 1958 y visitado diariamente por cientos de turistas.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="card shadow-sm">
-                <img src="imagenes/quinta.jpg" id="quinta" class="card-img-top" alt="Parque Estancia La Quinta">
-                <div class="card-body">
-                  <h5 class="card-title">PARQUE ESTANCIA LA QUINTA</h5>
-                  <p class="card-text">Maravillosa reserva natural que conserva además el legado jesuítico carlospacense.</p>
+                <a href="quinta.html"> <img src="imagenes/quinta.jpg" id="quinta" class="card-img-top" alt="Parque Estancia La Quinta"></a>
+                <div class="quinta bg-dark card-body">
+                   <h5 class="card-title text-danger ">PARQUE ESTANCIA LA QUINTA</h5>
+                  <p class="card-text text-white">Maravillosa reserva natural que conserva además el legado jesuítico carlospacense.</p>
                 </div>
               </div>
             </div>
@@ -195,26 +195,40 @@
               </div>
         </div>
       </main>
-      <footer id="contacto" class="bg-dark text-white text-center py-4">
+      <footer id="contacto" class="bg-dark text-white py-5">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="imagenes/logo1.jpg" alt="Logo" id="logo" class="img-fluid">
+          <div class="row text-center text-md-start align-items-center">
+          
+            <div class="col-md-4 mb-3 mb-md-0">
+              <img src="imagenes/logo1.jpg" alt="Logo de Villa Carlos Paz" class="img-fluid" style="max-height: 80px;">
             </div>
-            <div class="redes col-md-4">
-              <p>¡Síguenos en nuestras redes!</p>
-              <a href="https://api.whatsapp.com/send?phone=543541528822" class="text-white me-3">
-                <i class="fab fa-whatsapp">WHATSAPP</i>
+      
+            
+            <div class="redes col-md-4 mb-3 mb-md-0">
+              <p class="mb-2 text-md-center">¡Síguenos en nuestras redes sociales!</p>
+              <a href="https://api.whatsapp.com/send?phone=543541528822" class="text-white me-3 fs-4">
+                <i>Whatapp</i>
               </a>
-              <a href="https://www.facebook.com/VillaCarlosPaz.SecretariadeTurismo/?ref=page_internal" class="text-white me-3">
-                <i class="fab fa-facebook">FACEBOOK</i>
+              <a href="https://www.facebook.com/VillaCarlosPaz.SecretariadeTurismo" class="text-white me-3 fs-4">
+                <i>Facebook</i>
               </a>
-              <a href="https://www.instagram.com/villacarlospazoficial/?hl=es-la" class="text-white me-3">
-                <i class="fab fa-instagram">INSTAGRAM</i>
+              <a href="https://www.instagram.com/villacarlospazoficial/" class="text-white fs-4">
+                <i>Instagram</i>
               </a>
             </div>
+      
+          
             <div class="col-md-4">
-              <img src="imagenes/logo_municipalidad3.jpg" alt="Municipalidad" id="municipalidad" class="img-fluid">
+              <p class="mb-1"><strong>Municipalidad de Villa Carlos Paz</strong></p>
+              <p class="mb-1">Dirección: Calle Principal 123, Villa Carlos Paz</p>
+              <p class="mb-0">Teléfono: (03541) 123-4567</p>
+            </div>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <small>&copy; 2024 Villa Carlos Paz. Todos los derechos reservados.</small>
             </div>
           </div>
         </div>

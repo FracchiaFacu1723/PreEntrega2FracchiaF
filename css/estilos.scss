@@ -1,9 +1,11 @@
 @import 'header';
 @import 'main';
 @import 'footer';
+@import 'variables';
 
-
-
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 html {
     scroll-behavior: smooth;
