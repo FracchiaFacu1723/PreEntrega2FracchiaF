@@ -37,38 +37,27 @@ color: red;
 
 @media (max-width: 768px){  
 
-    /* Sección "visita" */
-
-    .visita h2 {
-        font-size: 18px;
-        padding: 20px;
+  @media (max-width: 768px) {
+    #hacer {
+      display: flex;
+      flex-direction: column; /* Organiza los elementos en una columna */
+      padding: 10px; /* Ajusta el espaciado para dispositivos pequeños */
     }
-
-    .visita h3 {
-        font-size: 20px;
-        margin-top: 10px;
+  
+    #hacer .hacer {
+      width: 100%; /* Cada columna ocupa el 100% del ancho */
+      margin-bottom: 20px; /* Agrega separación entre las columnas */
     }
-
-    .visita p {
-        font-size: 1rem; /* Texto más pequeño y legible */
-      line-height: 1.5; /* Espaciado entre líneas */
-      text-align: justify; /* Justificar el texto */
-      margin: 10px 15px; /* Añade márgenes para espacio */
+  
+    #hacer h2 {
+      font-size: 1.5rem; /* Ajusta el tamaño del título */
+      margin-bottom: 20px; /* Espaciado adicional debajo del título */
     }
-
-
-
+  
     #hacer h3 {
-        font-size: 18px;
-        margin-top: 10px;
-        text-align: center;
+      font-size: 1.2rem; /* Ajusta el tamaño de los subtítulos */
     }
-
-    #hacer ul li {
-        font-size: 14px;
-      width: 100%;
-      padding: 5px;
-    }
+  }
 
     /* Secciones de fondo con imágenes */
     .paseo, .cerro, .cucu, .quinta {

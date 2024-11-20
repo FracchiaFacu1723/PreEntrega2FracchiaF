@@ -1,17 +1,236 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @import 'variables';
- *   |         ^^^^^^^^^^^
- *   '
- *   estilos.scss 4:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import 'variables';\d\a   \2502          ^^^^^^^^^^^\a   \2575 \a   estilos.scss 4:9  root stylesheet";
+@charset "UTF-8";
+h3 {
+  color: red;
 }
+
+#logo {
+  width: 70px;
+  height: 50px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  margin: 5px;
+  padding: 5px;
+}
+
+header ul li a {
+  border-radius: 10px;
+}
+
+header ul li a:hover {
+  background-color: rosybrown;
+}
+
+main {
+  background-color: whitesmoke;
+  padding: 50px;
+}
+
+main #visita {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+#hacer {
+  padding: 50px 20px;
+}
+
+main #hacer ul {
+  list-style: none;
+  padding-left: 20px;
+}
+main #hacer li {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+main #hacer h3 {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  /* Secciones de fondo con imágenes */
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #hacer {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    padding: 10px; /* Ajusta el espaciado para dispositivos pequeños */
+  }
+  #hacer .hacer {
+    width: 100%; /* Cada columna ocupa el 100% del ancho */
+    margin-bottom: 20px; /* Agrega separación entre las columnas */
+  }
+  #hacer h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título */
+    margin-bottom: 20px; /* Espaciado adicional debajo del título */
+  }
+  #hacer h3 {
+    font-size: 1.2rem; /* Ajusta el tamaño de los subtítulos */
+  }
+}
+@media (max-width: 768px) {
+  .paseo, .cerro, .cucu, .quinta {
+    height: auto;
+    background-size: cover; /* Ajusta la imagen de fondo */
+    min-height: 200px; /* Establece una altura mínima */
+  }
+  .paseo h3, .cerro h3, .cucu h3, .quinta h3 {
+    font-size: 22px;
+  }
+  .paseo p, .cerro p, .cucu p, .quinta p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visita .cerro, .quinta, .cucu, .paseo {
+  animation: fadeInUp 1s ease-in-out;
+  opacity: 0; /* Por defecto no es visible */
+}
+
+.visita .cerro:hover, .cucu:hover, .quinta:hover, .paseo:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  transition: transform 0.3s ease-in-out;
+}
+
+.visita img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  transition: transform 0.3s ease-in-out;
+}
+
+.visita .cerro, .cucu, .quinta, .paseo {
+  opacity: 1;
+}
+
+/* PASEO COSTANERA*/
+main #principal {
+  height: 400px;
+  width: 500px;
+}
+
+.mapa iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 450px;
+  border: relative 0;
+}
+
+main .foto {
+  height: 300px;
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  /* Ajustar las imágenes principales */
+  #principal {
+    width: 200px;
+    height: 100px;
+  }
+  /* Alinear texto e imágenes en main */
+  main .col-6 {
+    flex: 0 0 100%; /* Ocupan el 100% del ancho */
+    text-align: center; /* Centra el texto */
+  }
+  /* Ajustar galería de imágenes */
+  .grid img {
+    width: 100%; /* Imágenes de la galería en tamaño completo */
+    margin: 10px 0; /* Espaciado entre imágenes */
+  }
+  /* Ajustar tamaño y alineación del texto */
+  h3 {
+    font-size: 1.5rem; /* Reduce el tamaño de los títulos */
+    text-align: center; /* Centra todos los títulos */
+    margin-top: 15px;
+  }
+  p {
+    font-size: 1rem; /* Texto más pequeño y legible */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+    margin: 10px 15px; /* Añade márgenes para espacio */
+  }
+  .mapa {
+    height: 100%;
+    width: 100%;
+  }
+}
+br {
+  padding: 2px;
+  margin: 2px;
+}
+
+.reloj-cucu {
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 1.8; /* Espaciado entre líneas */
+  font-size: 1rem;
+  text-align: justify; /* Justificar texto */
+}
+
+.reloj-cucu h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.reloj-cucu p {
+  margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+footer {
+  background-color: rgb(246, 255, 0);
+}
+
+footer #logo {
+  float: left;
+  height: 80px;
+  width: 150px;
+}
+
+@media (max-width: 576px) {
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  footer #logo, footer #municipalidad {
+    width: 80px;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=estilos.css.map */
