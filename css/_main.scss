@@ -37,7 +37,7 @@ color: red;
 
 @media (max-width: 768px){  
 
-  @media (max-width: 768px) {
+  
     #hacer {
       display: flex;
       flex-direction: column; /* Organiza los elementos en una columna */
@@ -57,7 +57,7 @@ color: red;
     #hacer h3 {
       font-size: 1.2rem; /* Ajusta el tamaño de los subtítulos */
     }
-  }
+  
 
     /* Secciones de fondo con imágenes */
     .paseo, .cerro, .cucu, .quinta {
@@ -106,11 +106,10 @@ color: red;
   }
 
   /* PASEO COSTANERA*/
-main #principal
-{
-    height: 400px;
-    width: 500px;
-
+  #principal {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantiene las proporciones */
+    margin-bottom: 20px; /* Añade separación con el texto */
 }
 .mapa iframe {
     border-radius: 10px;
@@ -118,56 +117,43 @@ main #principal
     width:100%; 
     height:450px;
     border: relative 0;
+    margin-bottom: 40px;
 }
-main .foto
-{
-    height: 300px;
-    width: 450px;
+.grid img {
+  margin-bottom: 15px; /* Espaciado adicional entre imágenes */
+}
+
+.grid .img-fluid {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para las imágenes */
 }
 
 
 
-
-@media (max-width: 768px)
-{
-     /* Ajustar las imágenes principales */
+@media (max-width: 768px) {
   #principal {
-    width: 200px;
-    height: 100px;
-  }
+    height: auto; /* Se ajusta la altura de la imagen para pantallas más pequeñas */
+}
 
-  /* Alinear texto e imágenes en main */
-  main .col-6 {
-    flex: 0 0 100%; /* Ocupan el 100% del ancho */
-   
-    text-align: center; /* Centra el texto */
-  }
-
-  /* Ajustar galería de imágenes */
-  .grid img {
-    width: 100%; /* Imágenes de la galería en tamaño completo */
-    margin: 10px 0; /* Espaciado entre imágenes */
-  }
+.row p {
+    font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    margin-bottom: 15px; /* Añade espacio debajo de cada párrafo */
+}
   
-    /* Ajustar tamaño y alineación del texto */
- h3 {
-      font-size: 1.5rem; /* Reduce el tamaño de los títulos */
-      text-align: center; /* Centra todos los títulos */
-      margin-top: 15px;
-    }
- p 
-    {
-      font-size: 1rem; /* Texto más pequeño y legible */
-      line-height: 1.5; /* Espaciado entre líneas */
-      text-align: justify; /* Justificar el texto */
-      margin: 10px 15px; /* Añade márgenes para espacio */
-    }
+  
+  /* Ajustes para pantallas pequeñas */
+  .grid {
+      margin-top: 15px; /* Margen superior para separar las imágenes del mapa */
+  }
 
- .mapa 
- {
-    height: 100%;
-    width: 100%;
- }
+  .grid img {
+      margin-bottom: 10px; /* Espaciado inferior adicional entre imágenes */
+  }
+
+    /* Ajustar la altura del mapa en dispositivos móviles */
+    .mapa iframe {
+      width: 100%;
+      height: 140px; /* Reduce la altura del mapa en pantallas pequeñas */
+  }
 }
 br {
     padding: 2px;

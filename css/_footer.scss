@@ -16,21 +16,21 @@ width: 150px;
    
     
 
-
-    /* Footer */
     footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
+        padding: 15px; /* Reduce el relleno en pantallas pequeñas */
     }
 
-    footer #logo, footer #municipalidad {
-        width: 80px;
-        height: auto;
-        margin: 10px 0;
+    footer .col-md-4 {
+        margin-bottom: 15px; /* Añade separación entre columnas */
     }
+
+    footer img {
+        max-height: 50px; /* Tamaño más pequeño del logo */
+    }
+
+    footer .redes a {
+        font-size: 1.2rem; /* Reduce el tamaño de los íconos */
+    } 
    
 
     
