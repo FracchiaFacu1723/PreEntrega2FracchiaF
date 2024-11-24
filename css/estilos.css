@@ -144,6 +144,7 @@ main #hacer h3 {
   .row p {
     font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
     margin-bottom: 15px; /* Añade espacio debajo de cada párrafo */
+    text-align: justify;
   }
   /* Ajustes para pantallas pequeñas */
   .grid {
@@ -158,28 +159,6 @@ main #hacer h3 {
     height: 140px; /* Reduce la altura del mapa en pantallas pequeñas */
   }
 }
-br {
-  padding: 2px;
-  margin: 2px;
-}
-
-.reloj-cucu {
-  margin: 20px auto;
-  padding: 20px;
-  line-height: 1.8; /* Espaciado entre líneas */
-  font-size: 1rem;
-  text-align: justify; /* Justificar texto */
-}
-
-.reloj-cucu h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-
-.reloj-cucu p {
-  margin-bottom: 15px; /* Espacio entre párrafos */
-}
-
 footer {
   background-color: rgb(246, 255, 0);
 }
