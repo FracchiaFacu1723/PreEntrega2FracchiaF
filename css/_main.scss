@@ -131,7 +131,7 @@ color: red;
 
 @media (max-width: 768px) {
   #principal {
-    min-height: 200px; /* Se ajusta la altura de la imagen para pantallas más pequeñas */
+    min-height: auto; /* Se ajusta la altura de la imagen para pantallas más pequeñas */
     
 }
 
