@@ -139,7 +139,7 @@ main #hacer h3 {
 
 @media (max-width: 768px) {
   #principal {
-    height: auto; /* Se ajusta la altura de la imagen para pantallas más pequeñas */
+    min-height: 200px; /* Se ajusta la altura de la imagen para pantallas más pequeñas */
   }
   .row p {
     font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
