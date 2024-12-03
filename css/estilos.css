@@ -144,7 +144,7 @@ main #hacer h3 {
   .row p {
     font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
     margin-bottom: 15px; /* Añade espacio debajo de cada párrafo */
-    text-align: justify;
+    text-align: center;
   }
   /* Ajustes para pantallas pequeñas */
   .grid {
